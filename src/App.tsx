@@ -1,24 +1,39 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReadingBar from './components/ReadingBar';
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReadingBar>
+        something
+      </ReadingBar>
+
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+
     </div>
   );
 }
