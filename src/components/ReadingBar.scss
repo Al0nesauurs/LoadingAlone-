@@ -1,16 +1,10 @@
-$primary-green: rgb(23, 163, 4);
+@use '../App.scss' as gloabl;
 
 .root {
-    height: 50px;
-    background: $primary-green;
+    height: 1.5rem;
+    background: gloabl.$primary-green;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    transform: translateX(100%);
 }
 
-@keyframes scrollProgress {
-    to {
-        transform: translateX(0);
-    }
-}

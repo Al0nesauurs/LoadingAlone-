@@ -3,10 +3,12 @@ import './ReadingBar.scss';
 
 interface ReadingBarProps {
   children?: React.ReactNode;
+  height?: string;
+  color?: string;
 };
 
 const ReadingBar: FC<ReadingBarProps> = (props: ReadingBarProps) => {
-  const { children } = props
+  const { children, height, color } = props
 
   useEffect(() => {
     const target = document.querySelector<HTMLElement>(".root") || { style: { transform: "" } } as HTMLElement
@@ -18,7 +20,12 @@ const ReadingBar: FC<ReadingBarProps> = (props: ReadingBarProps) => {
 
   }, [])
 
-  return <div className="root">
+  const customStyled = {
+    height: height,
+    backgroundColor: color
+  }
+
+  return <div style={customStyled} className='root'>
     {children}
   </div>
 }
