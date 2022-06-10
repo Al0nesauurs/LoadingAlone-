@@ -1,39 +1,29 @@
 import './App.scss';
-import LoadingComponent from './components/LoadingComponent/LoadingComponent';
-import ReadingBar from './components/ReadingBar/ReadingBar';
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './components/Home/Home';
 
 function App() {
 
 
   return (
-    <div className="App">
-      <ReadingBar color="red" >
-        Reading bar
-      </ReadingBar>
-      {/* <LoadingComponent /> */}
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
-      <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur unde obcaecati quasi totam quo consequatur omnis ad, non, provident eos nam nihil nulla quas ipsa neque. Ad, quos voluptatum.</div>
+    <Router>
+      {/* A <Routes > looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+      <Routes >
+        <Route path="/" element={Home()}>
+        </Route>
+        <Route // redirect
+          path="*"
+          element={<Navigate to="/" replace />}
+        />
+      </Routes >
 
-    </div>
+    </Router >
   );
 }
 
