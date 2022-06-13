@@ -7,9 +7,13 @@ const Home = (): ReactNode => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
     return <>
 
-        <ReadingBar color="red" >
-            Reading bar
-        </ReadingBar>
+        <div style={{ height: '1200px' }}>
+
+            <ReadingBar color="red" parentHeight={1200}>
+                Reading bar
+            </ReadingBar>
+            helpp
+        </div>
         <button onClick={() => setIsLoading(true)}>Process</button>
         {
             isLoading && <LoadingComponent cancelLoad={() => setIsLoading(false)} />

@@ -41,15 +41,19 @@ body {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     25% {
         -webkit-transform: rotate(270deg);
     }
+
     50% {
         -webkit-transform: rotate(180deg);
     }
+
     75% {
         -webkit-transform: rotate(90deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -59,16 +63,34 @@ body {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     25% {
         -webkit-transform: rotate(270deg);
     }
+
     50% {
         -webkit-transform: rotate(180deg);
     }
+
     75% {
         -webkit-transform: rotate(90deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
